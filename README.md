@@ -43,4 +43,4 @@ docker-compose up
 ```
 pip install -r requirements.txt
 ```
-4. See examples in the notebook: [notebook](demo.ipynb)
+4. See examples in the jupyter notebook: [notebook](demo.html)
