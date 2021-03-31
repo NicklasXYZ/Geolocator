@@ -1,10 +1,13 @@
 # Geolocator Component
 
-For now, this repository contains a simple python script along with a configured
-stack of technologies that makes it possible to efficiently determine whether a
-given point in space is close to or contained in another geospatial feature,
-such as a polygon or multipolygon. In other words, we can determine if a
-*location is inside or close to e.g. a building*.
+![illu](docs/preview.png)
+
+This repository contains a python script along with a configured stack of
+technologies ([Overpass](https://wiki.openstreetmap.org/wiki/Overpass_API) and
+[Redis](https://redis.io/)) that makes it possible to efficiently determine
+whether a given point in space is close to or contained in another geospatial
+feature, such as a polygon. In other words, we can determine if
+a *location is inside or close to e.g. a building*.
 
 See the following for a brief overview of how the the python script and
 technology stack work:
@@ -28,7 +31,7 @@ technology stack work:
    contained in one of the geospatial features returned from Overpass. 
 
 Note: Sorted sets of geospatial features are regularly purged from Redis based
-on a user-defined Time-to-live (ttl) value. This is done to make sure stale data
+on a user-defined time-to-live (ttl) value. This is done to make sure stale data
 from Overpass do not accummulate, stay in cache and take up too much unnecessary
 memory.  
 
@@ -43,4 +46,5 @@ docker-compose up
 ```
 pip install -r requirements.txt
 ```
-4. See examples in the jupyter notebook: [html](https://nicklasxyz.github.io/Geolocator/) or [.ipynb](index.ipynb)
+4. See examples in the jupyter notebook:
+   [html](https://nicklasxyz.github.io/Geolocator/) or [.ipynb](index.ipynb)

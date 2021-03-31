@@ -1,5 +1,8 @@
+# Byte-compiled / optimized / DLL files
+__pycache__
+
 # Jupyter notebook files
-**/*.ipynb_checkpoints/
+.ipynb_checkpoints
 
 # Database files and dirs
-/overpass_db
+overpass_db
