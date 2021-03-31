@@ -9,11 +9,11 @@ whether a given point in space is close to or contained in another geospatial
 feature, such as a polygon. In other words, we can determine if
 a *location is inside or close to e.g. a building*.
 
-See the following for a brief overview of how the the python script and
+See the following for a brief overview of how the python script and
 technology stack work:
 
 1. Given a location in terms of longitude and latitude in decimal degrees,
-   geohash the location using a [hilbert space filling
+   geohash the location using a [Hilbert space-filling
    curve](https://github.com/tammoippen/geohash-hilbert).
 2. Use the computed geohash as a key to check in Redis if a [sorted
    set](https://redislabs.com/ebook/part-2-core-concepts/chapter-3-commands-in-redis/3-5-sorted-sets/)
@@ -32,7 +32,7 @@ technology stack work:
 
 Note: Sorted sets of geospatial features are regularly purged from Redis based
 on a user-defined time-to-live (ttl) value. This is done to make sure stale data
-from Overpass do not accummulate, stay in cache and take up too much unnecessary
+from Overpass do not accumulate, stay in cache and take up too much unnecessary
 memory.  
 
 ## Usage
