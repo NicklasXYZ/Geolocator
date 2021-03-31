@@ -1,0 +1,5 @@
+# Jupyter notebook files
+**/*.ipynb_checkpoints/
+
+# Database files and dirs
+/overpass_db

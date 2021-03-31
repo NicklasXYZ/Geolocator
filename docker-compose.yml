@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+
+  overpass:
+    restart: always
+    image: wiktorn/overpass-api:latest
+    container_name: overpass0
+    ports:
+      - 12345:80
+    env_file:
+      - ./overpass.env
+    volumes:
+      - ./overpass_db:/db:rw
+      
+  redis:
+    restart: always
+    image: redis:latest
+    container_name: redis0
+    ports:
+      - 6379:6379
