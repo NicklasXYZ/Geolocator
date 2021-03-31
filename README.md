@@ -43,4 +43,4 @@ docker-compose up
 ```
 pip install -r requirements.txt
 ```
-4. See examples in the jupyter notebook: [html](docs/index.html), [.ipynb](index.ipynb)
+4. See examples in the jupyter notebook: [html](https://nicklasxyz.github.io/Geolocator/) or [.ipynb](index.ipynb)
